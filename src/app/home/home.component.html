@@ -1,0 +1,27 @@
+<div class="container">
+    <div class="row">
+        <!-- About me -->
+        <div class="col-lg shadow border m-1">
+            <div class="text-center">
+                <h2>About Me</h2>
+                <img src="../../assets/Screenshot 2024-11-01 at 4.39.32 PM.png" alt="Profile Picture" width="256" height="256" class = "rounded-circle">
+                <p>Welcome to my portfolio! I'm Devdutt Thakkar, currently pursuing my master's in Computer Science at Arizona State University, set to graduate in May 2025. My journey in tech has been fueled by a genuine curiosity and a drive to solve complex challenges. I’ve had the opportunity to work on diverse projects, from predicting stock trends with deep learning models to creating scalable backend systems and guiding students as a TA, making programming feel like an exciting puzzle. My technical toolkit includes everything from Java to Docker, from full-stack development to data-driven insights. I love merging creativity with precision to build tools that empower users and help drive decisions. I’m excited to share my work and the problem-solving mindset that I bring to each project. Let’s explore what we can build together!</p>
+            </div>
+        </div>
+        <!-- Featured Project -->
+        <div class="col-lg shadow border m-1">
+            <div class="text-center">
+                <h2>Featured Project</h2>
+                <h4>{{featureProject.name}}</h4>
+            </div>
+
+            <carousel>
+                <div *ngFor="let picture of featureProject.pictures">
+                    <slide><img src={{picture}} alt="slide" style="display: block; width: 100%;"></slide>
+                </div>
+            </carousel>
+            <p class="m2-1">{{featureProject.summary}}</p>
+            <p>Visit the portfolio section to learn more.</p>
+        </div>
+    </div>
+</div>

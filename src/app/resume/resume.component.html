@@ -1,0 +1,262 @@
+<div class="container text-center">
+    <button class="btn btn-primary mb-5 shadow border" (click)="DownloadFile()">
+        Download PDF Resume
+    </button>
+    <div class="pb-2">
+        <accordion [isAnimated]="true" class="shadow">
+            <accordion-group [(isOpen)]="isWorkExperienceOpen">
+                <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
+                    <div style="visibility: hidden;">></div>
+                    <div class="btn-link">Work Experience</div>
+                    <div style="width: 10.95px;">
+                        <div *ngIf= "!isWorkExperienceOpen" style="color:white;">></div>
+                        <div *ngIf= "isWorkExperienceOpen" style="color:white;">v</div>
+                    </div>
+                </button>
+                <div style="text-align: left;">
+                    <h2 class="mb-0">
+                        Teaching Assistant
+                    </h2>
+                    <h3 class = "text-primary">
+                        Arizona State University
+                    </h3>
+                    <ul>
+                        <li>Led lab sessions and recitations for CSE 110, focusing on core Java concepts, hands-on debugging practices, and guiding students through step-by-step problem-solving methods in a classroom setting.</li>
+                        <li>Coordinated and streamlined the grading of programming assignments and exams, ensuring accuracy and efficiency, while handling grading-related issues using tools like grading scripts or platforms.</li>
+                        <li>Offered direct support to 225 students, assisting with code reviews, debugging, and technical queries, while maintaining effective communication and problem resolution.</li>
+                    </ul>
+                </div>
+                <hr>
+                <div style="text-align: left;">
+                    <h2 class="mb-0">
+                        Data Science Intern
+                    </h2>
+                    <h3 class = "text-primary">
+                        SculptSoft Pvt. Ltd.
+                    </h3>
+                    <ul>
+                        <li>Developed deep learning models for stock market prediction, utilizing TensorFlow and Keras to enhance model accuracy by 33.3%. Implemented LSTM networks to capture temporal dependencies, improving short-term forecasting.</li>
+                        <li>Engineered and maintained factual dashboards for real-time monitoring, leveraging software tools - Tableau and Power BI, resulting in a 25.23% improvement in Parametric visualization efficiency.</li>
+                        <li>Implemented a Natural Language Processing (NLP) sentiment analysis model using Hugging Face’s Transformers to analyze financial news, improving prediction accuracy by 17%.</li>
+                        <li>Integrated AWS S3 for scalable data storage and utilized Docker for containerized deployments, reducing infrastructure costs by 20%.</li>
+                    </ul>
+                </div>
+                <hr>
+                <div style="text-align: left;">
+                    <h2 class="mb-0">
+                        Software Developer Intern 
+                    </h2>
+                    <h3 class = "text-primary">
+                        TalentServe
+                    </h3>
+                    <ul>
+                        <li>Automated CI/CD pipelines using Jenkins and managed containerized applications with Docker, leading to a 35% reduction in deployment time.</li>
+                        <li>Leveraged AWS S3 for secure data storage and Google Cloud Platform for scaling backend services, reducing operational costs by 20% and managed project documentation and issue tracking with Jira and Confluence.</li>
+                        <li>Developed RestAPIs in Flask utilizing NLP to dynamically ask users mental health-related questions, generate follow-up questions based on responses (capped at 10), and integrated it into the project.</li>
+                    </ul>
+                </div>
+            </accordion-group>
+            <accordion-group [(isOpen)]="isEducationOpen">
+                <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
+                    <div style="visibility: hidden;">></div>
+                    <div class="btn-link">Education</div>
+                    <div style="width: 10.95px;">
+                        <div *ngIf= "!isEducationOpen" style="color:white;">></div>
+                        <div *ngIf= "isEducationOpen" style="color:white;">v</div>
+                    </div>
+                </button>
+                <div style="text-align: left;">
+                    <h2 class="mb-0">
+                        Master of Science in Computer Science
+                    </h2>
+                    <h3 class = "text-primary">
+                        Arizona State University
+                    </h3>
+                    <ul>
+                        <li>Graduating from Arizona State University in May 2025.</li>
+                        <li>Maintaining a current CGPA of 3.33.</li>
+                        <li>Working as a part-time Teaching Assistant.</li>
+                    </ul>
+                </div>
+                <hr>
+                <div style="text-align: left;">
+                    <h2 class="mb-0">
+                        Bachelor of Technology in Information and Communication Technology 
+                    </h2>
+                    <h3 class = "text-primary">
+                        Pandit Deendayal Energy University (PDEU)
+                    </h3>
+                    <ul>
+                        <li>Graduated from PDEU in May 2023.</li>
+                        <li>Graduated with a 3.76 GPA</li>
+                        <li>Participated in extracurricular clubs such as the avionics club, the finance club, and more!</li>
+                    </ul>
+                </div>
+    
+            </accordion-group>
+            <accordion-group [(isOpen)]="isCertificationsOpen">
+                <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
+                    <div style="visibility: hidden;">></div>
+                    <div class="btn-link">Certifications</div>
+                    <div style="width: 10.95px;">
+                        <div *ngIf= "!isCertificationsOpen" style="color:white;">></div>
+                        <div *ngIf= "isCertificationsOpen" style="color:white;">v</div>
+                    </div>
+                </button>
+                <div style="text-align: left;">
+                    
+                    <h3>Data Analysis with Python</h3>
+                    <ul>
+                        <li>Obtained June 2022</li>
+                        <li>Issued by Coursera, authorized by IBM</li>
+                        <li>Skills: Data Visualization, Data Science, Statistics</li>
+                    </ul>
+                    <hr>
+                    <h3>Data Science Methodology</h3>
+                    <ul>
+                        <li>Obtained June 2022</li>
+                        <li>Issued by Coursera, authorized by IBM</li>
+                        <li>Skills: Data Visualization, Data Science, Statistics</li>
+                    </ul>
+                    <hr>
+                    <h3>Databases and SQL for Data Science</h3>
+                    <ul>
+                        <li>Obtained June 2022</li>
+                        <li>Issued by Coursera, authorized by IBM</li>
+                        <li>Skills: Data Visualization, Data Science, Statistics</li>
+                    </ul>
+                    <hr>
+                    <h3>Python Project for Data Science</h3>
+                    <ul>
+                        <li>Obtained June 2022</li>
+                        <li>Issued by Coursera, authorized by IBM</li>
+                        <li>Skills: Data Visualization, Data Science, Statistics</li>
+                    </ul>
+                    <hr>
+                    <h3>Python for Data Science and AI</h3>
+                    <ul>
+                        <li>Obtained June 2022</li>
+                        <li>Issued by Coursera, authorized by IBM</li>
+                        <li>Skills: Data Visualization, Data Science, Statistics</li>
+                    </ul>
+                    <hr>
+                    <h3>Python</h3>
+                    <ul>
+                        <li>Obtained November 2021</li>
+                        <li>Issued by NPTEL</li>
+                    </ul>
+                    <hr>
+                    <h3>Front-End Web Development with React</h3>
+                    <ul>
+                        <li>Obtained April 2021</li>
+                        <li>Issued by Coursera</li>
+                        <li>Credential ID: Q6NJQKL649YZ</li>
+                    </ul>
+                    <hr>
+                    <h3>Responsive Web Design</h3>
+                    <ul>
+                        <li>Obtained March 2021</li>
+                        <li>Issued by freeCodeCamp</li>
+                    </ul>
+                    <hr>
+                    <h3>JavaScript Algorithms and Data Structures</h3>
+                    <ul>
+                        <li>Obtained February 2021</li>
+                        <li>Issued by freeCodeCamp</li>
+                    </ul>
+                    <hr>
+                    <h3>API Design and Fundamentals of Google Cloud's Apigee API Platform</h3>
+                    <ul>
+                        <li>Obtained August 2020</li>
+                        <li>Issued by Coursera</li>
+                        <li>Credential ID: DBC33BGBA353</li>
+                    </ul>
+                
+                </div>            
+    
+            </accordion-group>
+            <accordion-group [(isOpen)]="isSkillsOpen">
+                <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
+                    <div style="visibility: hidden;">></div>
+                    <div class="btn-link">Skills</div>
+                    <div style="width: 10.95px;">
+                        <div *ngIf= "!isSkillsOpen" style="color:white;">></div>
+                        <div *ngIf= "isSkillsOpen" style="color:white;">v</div>
+                    </div>
+                </button>
+                <div class="row" style="text-align: left;">
+    
+                    <div class="col">
+                        <h3>Programming Languages:</h3>
+                        <ul>
+                            <li>Java</li>
+                            <li>Python</li>
+                            <li>C#</li>
+                            <li>C/C++</li>
+                            <li>SQL</li>
+                            <li>JavaScript</li>
+                            <li>HTML/CSS</li>
+                        </ul>
+                    </div>
+                
+                    <div class="col">
+                        <h3>Frameworks & Libraries:</h3>
+                        <ul>
+                            <li>Flask</li>
+                            <li>React</li>
+                            <li>Redux</li>
+                            <li>Node.js</li>
+                            <li>NLTK</li>
+                            <li>TensorFlow</li>
+                            <li>Scikit-learn</li>
+                            <li>OpenCV</li>
+                            <li>Pandas</li>
+                            <li>NumPy</li>
+                        </ul>
+                    </div>
+                
+                    <div class="col">
+                        <h3>Databases:</h3>
+                        <ul>
+                            <li>PostgreSQL</li>
+                            <li>MySQL</li>
+                            <li>Firebase Database</li>
+                            <li>Oracle</li>
+                            <li>MongoDB</li>
+                            <li>DynamoDB</li>
+                        </ul>
+                    </div>
+                
+                    <div class="col">
+                        <h3>Developer Tools & Platforms:</h3>
+                        <ul>
+                            <li>VS Code</li>
+                            <li>IntelliJ</li>
+                            <li>Eclipse</li>
+                            <li>Power BI</li>
+                            <li>Tableau</li>
+                            <li>Git</li>
+                            <li>GitLab</li>
+                            <li>Jenkins</li>
+                            <li>Docker</li>
+                            <li>Jira</li>
+                            <li>Confluence</li>
+                        </ul>
+                    </div>
+                
+                    <div class="col">
+                        <h3>Cloud Platforms/Services:</h3>
+                        <ul>
+                            <li>AWS</li>
+                            <li>Google Cloud Platform (GCP)</li>
+                            <li>Firebase</li>
+                            <li>IBM Cloud</li>
+                        </ul>
+                    </div>
+                
+                </div>            
+            </accordion-group>
+        </accordion>
+    </div>
+    
+</div>
